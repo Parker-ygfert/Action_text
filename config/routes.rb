@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   root "posts#index"
   resources :posts
+
+  resources :mentions, only: [:index]
 end
